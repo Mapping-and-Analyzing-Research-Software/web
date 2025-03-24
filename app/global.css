@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors in Brand Color Scheme */
+  --primary-1: #cbeaff;
+  --primary-2: #aaddff;
+  --primary-3: #78c9ff;
+  --primary-4: #37b0ff;
+  --primary-5: #009aff;
+  --primary-6: #007fd3;
+  --primary-7: #015e9b;
+  --primary-8: #00426c;
+  --primary-9: #002e4c;
+
+  /* Secondary Colors in Brand Color Scheme */
+  --secondary-1: #ffd8b5;
+  --secondary-2: #ffc189;
+  --secondary-3: #ffad64;
+  --secondary-4: #fe9c45;
+  --secondary-5: #ff861b;
+  --secondary-6: #f37300;
+  --secondary-7: #d66600;
+  --secondary-8: #9b4a00;
+  --secondary-9: #6b3300;
+
+  /* Neutral Colors in Brand Color Scheme */
+  --neutral-1: #ffffff;
+  --neutral-2: #efefef;
+  --neutral-3: #dddddd;
+  --neutral-4: #aaaaaa;
+  --neutral-5: #929292;
+  --neutral-6: #7e7e7e;
+  --neutral-7: #616161;
+  --neutral-8: #444444;
+  --neutral-9: #201f1f;
+
+
+  --navbar-height: 10vh;
+}
+
+a {
+  color: black;
+  text-decoration: none !important;
+}
+
+.blurred-background {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.blurred-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/img/club.jpg"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(50%); /* Adjust blur intensity */
+  z-index: 1; /* Position behind content */
+}
+
+.blurred-background h1,
+.blurred-background p {
+  position: relative;
+  z-index: 2; /* Position above the blurred image */
+}
+
+.blurred-background div {
+  position: relative;
+  z-index: 2; /* Position above the blurred image */
+}
+
+body {
+  background: rgb(200, 128, 137);
+  background: fixed linear-gradient(to bottom right, #ff00dd, #92ff35);
+}
+
+ul {
+  list-style-type: disc; /* Default bullet type */
+  margin-left: 20px; /* Indent the list */
+}
+
+/* General styles for ordered lists */
+ol {
+  list-style-type: decimal; /* Default number type */
+  margin-left: 20px; /* Indent the list */
+}
+
+
+/* Global Styles for the table */
+.table-container {
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  outline: none; /* Remove outline for focusable div */
+}
+
+.spreadsheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
+
+.spreadsheet-table th,
+.spreadsheet-table td {
+  padding: 5px;
+  border: 1px solid #ddd;
+}
+
+.spreadsheet-table th {
+  background-color: #ff00dd;
+  color: black;
+}
+
+.spreadsheet-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.spreadsheet-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.spreadsheet-table tr:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+/* Style for selected row */
+.spreadsheet-table tr.selected {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.spreadsheet-table tr.selected:hover {
+  background-color: #45a049;
+}

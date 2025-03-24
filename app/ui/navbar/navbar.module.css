@@ -1,0 +1,177 @@
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 1s linear;
+}
+
+.mynavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 0 !important;
+  transition: top 0.3s ease;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--neutral-1);
+  
+  font-size: 12px;
+  margin-bottom:0;
+}
+
+.mynav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: auto;
+  padding: 0.5rem;
+  margin: 0;
+  
+  font-size: 12px;
+}
+
+.mynavbar ul {
+  list-style-type: none; /* Default bullet type */
+  margin-left: 0px; /* Indent the list */
+  
+  font-size: 12px;
+}
+
+/* General styles for ordered lists */
+.mynavbar ol {
+  list-style-type: none; /* Default number type */
+  margin-left: 0px; /* Indent the list */
+  
+  font-size: 12px;
+}
+
+.navbar-collapse {
+  padding: 1rem;
+}
+
+.container-fluid {
+  padding: 0 !important;
+}
+
+/* Bad practice here, im pulling the media numbers from bootstrap styles */
+/* Media Query for larger screens */
+@media (max-width: 768px) {
+  .navbar-collapsed {
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw !important;
+    background-color: white;
+  }
+  .mynav-collapsed {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 110vh;
+  }
+  .nav-item-collapsed {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    
+  font-size: 12px;
+  }
+  .signup-btn-collapsed {
+    background-color: none !important;
+    border-width: 0px;
+    border-radius: 15px;
+    position: relative;
+  }
+  .navbar-toggler-collapsed {
+    display: hidden !important;
+  }
+}
+
+.navbar-toggler {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+}
+
+.collapser {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+.empty {
+  height: var(--navbar-height);
+}
+
+.navbar-brand {
+  position: relative;
+  margin: 0 3rem 0 1rem;
+}
+
+.navbar-brand-image {
+  height: 3rem;
+  width: auto;
+}
+
+.navbar-brand span {
+  position: absolute;
+  top: 55%;
+  left: 65%;
+  font-size: 1rem;
+  z-index: 999;
+  color: var(--secondary-5);
+  font-weight: bold;
+  font-variant: small-caps;
+  
+  font-size: 12px;
+}
+
+.navbar-input {
+  padding: 0.5rem 1rem;
+  margin: 0 4rem !important;
+  border-width: 0.1rem;
+  width: auto;
+  margin: 0 1rem !important;
+  flex: 1;
+  border-color: var(--primary-2);
+}
+
+@media (max-width: 460px) {
+  .navbar-input {
+    display: none;
+  }
+}
+/* 
+.my-tracer{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    stroke: black;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 0;
+    z-index: 999;
+} */
+
+/* @keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#pen{
+    stroke-dasharray: 1;
+    stroke-dashoffset: 2;
+    animation: draw 5s linear infinite;
+} */

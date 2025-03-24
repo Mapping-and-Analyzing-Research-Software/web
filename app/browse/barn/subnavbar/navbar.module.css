@@ -1,0 +1,13 @@
+
+.subnavbar ul {
+  list-style-type: none; /* Default bullet type */
+  margin-left: 0px; /* Indent the list */
+}
+
+.subnavbar li {
+  display: inline;
+  align-items: center;
+  width: 75px;
+  padding: 0.5rem;
+  margin: 0;
+}

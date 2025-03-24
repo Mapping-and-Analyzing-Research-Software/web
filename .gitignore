@@ -1,3 +1,7 @@
+# SSL Certs
+*.cert
+*.key
+
 # Logs
 logs
 *.log
