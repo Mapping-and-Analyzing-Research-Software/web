@@ -22,10 +22,11 @@ export default function Page() {
       const artifact_data: TableRow[] = [
         { id: 1, artifacts: ["https://github.com/academic/awesome-datascience", "https://github.com/Avik-Jain/100-Days-Of-ML-Code", "https://github.com/microsoft/Data-Science-For-Beginners", "https://github.com/jakevdp/PythonDataScienceHandbook", "https://github.com/ossu/data-science", "https://github.com/HarvardEcon/data-science-interview-questions", "https://github.com/trevorstephens/ISLR-python", "https://github.com/AllenDowney/ThinkBayes", "https://github.com/AllenDowney/ThinkStats2"]},
         { id: 6, artifacts: ["https://github.com/numfocus/moss"]},
-        { id: 2, artifacts:  [{repo: "https://github.com/academic/awesome-datascience", info: "found on page somewebsite.com/123"},
-        {repo: "https://github.com/Avik-Jain/100-Days-Of-ML-Code", info: "found on page otherwebsite.com/321"},
-        {repo: "https://github.com/microsoft/Data-Science-For-Beginners", info: "found on page example.com/mypage"},
-        {repo: "https://github.com/jakevdp/PythonDataScienceHandbook", info: "found on page somewebsite.com/123"}]
+        { id: 2, artifacts:  [{pointer: "https://github.com/academic/awesome-datascience", type: "GitHub Repo", info: "found on page somewebsite.com/123"},
+        {pointer: "sam@cs.uoregon.edu", type: "Email", info: "found on page cs.uoregon.edu/~sam"},
+        {pointer: "https://github.com/Avik-Jain/100-Days-Of-ML-Code", type: "GitHub Repo", info: "found on page otherwebsite.com/321"},
+        {pointer: "https://github.com/microsoft/Data-Science-For-Beginners", type: "GitHub Repo", info: "found on page example.com/mypage"},
+        {pointer: "https://github.com/jakevdp/PythonDataScienceHandbook", type: "GitHub Repo", info: "found on page somewebsite.com/123"}]
         },
         { id: 3, artifacts: ["sam@example.com", "jon@example.com", "susan@example.com"]},
         { id: 4, artifacts: ["https://github.com/academic/awesome-datascience", "https://github.com/Avik-Jain/100-Days-Of-ML-Code", "https://github.com/microsoft/Data-Science-For-Beginners", "https://github.com/jakevdp/PythonDataScienceHandbook", "https://github.com/ossu/data-science", "https://github.com/HarvardEcon/data-science-interview-questions", "https://github.com/trevorstephens/ISLR-python", "https://github.com/AllenDowney/ThinkBayes", "https://github.com/AllenDowney/ThinkStats2"]},
@@ -80,6 +81,9 @@ export default function Page() {
           ))}
         </tbody>
       </table>
+      <div className="text-center m-3">
+                <Link href="" className="btn btn-primary">Export Selected Harvest</Link>
+            </div>
     </div>
         </div>
 
@@ -96,7 +100,7 @@ export default function Page() {
                     />
             </div>
             <div>
-            <p className="lead">Artifacts</p>
+            <p className="lead">Pointers to Artifacts</p>
             <textarea
                     className="text-xs"
                     value={JSON.stringify(artifact_data.find((row) => row.id === selectedRow?.id)?.artifacts, null, 2)|| ""}
@@ -107,9 +111,7 @@ export default function Page() {
             </div>
 
           
-            <div className="text-center">
-                <Link href="" className="btn btn-primary">Export Selected Harvest</Link>
-            </div>
+            
 
             </div>
         </div>
