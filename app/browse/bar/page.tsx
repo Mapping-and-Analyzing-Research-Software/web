@@ -60,7 +60,7 @@ export default function Page() {
 <li className="my-3"><Link className="btn btn-dark m-1" href="">Daiquiri</Link> (JSON)<br /> Everything there is to know about your choice of paper DOI. ​</li>
 <li className="my-3"><Link className="btn btn-dark m-1" href="">Margarita</Link> (JSON)<br /> Everything there is to know about your choice of email address. ​</li>
 <li className="my-3"><Link className="btn btn-dark m-1" href="">Martini</Link> (PNG)<br /> Plot of citations over time for your choice of paper DOI. ​</li>
-<li className="my-3"><Link className="btn btn-dark m-1" href="">Negroni</Link> (CSV)<br /> An Italian cocktail combining gin, Campari, and sweet vermouth. ​</li>
+<li className="my-3"><Link className="btn btn-dark m-1" href="">Negroni</Link> (CSV)<br /> Table of contributor affiliations of a project. ​</li>
 <li className="my-3"><Link className="btn btn-dark m-1" href="">Manhattan</Link> (CSV)<br /> A robust mix of rye whiskey, sweet vermouth, and bitters. ​</li>
 <li className="my-3"><Link className="btn btn-dark m-1" href="">Mojito</Link> (JSON)<br /> A Cuban favorite blending white rum, sugar, lime juice, soda water, and mint. ​</li>
 <li className="my-3"><Link className="btn btn-dark m-1" href="">Gin and Tonic</Link> (TEXT)<br /> A refreshing mix of gin and tonic water, often garnished with a lime wedge. ​</li>
