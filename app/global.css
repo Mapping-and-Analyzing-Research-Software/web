@@ -102,8 +102,8 @@ ol {
 .table-container {
   padding: 10px;
   margin: 0 auto;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
   outline: none; /* Remove outline for focusable div */
 }
 

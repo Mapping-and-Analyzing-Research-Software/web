@@ -58,7 +58,7 @@ export default function Page() {
             </select>
             <h4 className="h5 border-bottom  mt-3">About</h4>
             <p>Written and maintained by Jane Doe, jane@domain.com.</p>
-          <p>Source code for this script can be found at github.com/mars/core/.../scripts/3.3/</p>
+          <p>Source code for this script can be found at github.com/mars/core/.../bottle/scripts/3.3/</p>
             
           </div>
           
